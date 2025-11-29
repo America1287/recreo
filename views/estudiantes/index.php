@@ -17,9 +17,14 @@
             <td><?= htmlspecialchars($row['grado']) ?></td>
             <td>
                 <a href="/recreo/controllers/estudiantes.php?action=edit&id=<?= $row['id'] ?>">✏ Editar</a>
-                |
+                <br>
                 <a href="/recreo/controllers/estudiantes.php?action=delete&id=<?= $row['id'] ?>"
                    onclick="return confirm('¿Eliminar este estudiante?')">🗑 Eliminar</a>
+                <br>
+                <a href="/recreo/controllers/estudiantes.php?action=consolidado&id=<?= $row['id'] ?>">Consolidado</a>
+
+
+
             </td>
         </tr>
     <?php endwhile ?>

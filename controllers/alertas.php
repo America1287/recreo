@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once "../config/database.php";
+// $result = getAlertas($conn);
 
 if (!isset($_SESSION['user_id'])) {
     header("Location: /recreo/views/login.php");
