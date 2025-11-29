@@ -28,3 +28,4 @@ switch ($_SESSION['rol_id']) {
 }
 
 echo "<br><a href='controllers/logout.php'>Cerrar sesión</a>";
+?>
